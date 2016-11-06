@@ -1,0 +1,125 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Serif Pro', serif;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #626262
+}
+
+a {
+  color: #029586
+}
+
+a:hover {
+  color: #00B7A4
+}
+
+.nippy-pagination {
+  text-align: center;
+}
+
+.nippy-title {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.5em;
+}
+
+.nippy-index-title{
+  margin-bottom: 20px;
+}
+
+.nippy-description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+.nippy-nav {
+  text-align: center;
+  font-weight: lighter;
+  margin: auto;
+  width: 100%;
+}
+
+.nippy-nav li {
+  margin: 0px 0;
+  padding: 3px;
+  line-height: 0;
+  float: left;
+}
+
+.nav-current {
+  font-weight: normal;
+  background-color: #eee;
+}
+
+.main-header-content {
+  text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+  margin-top: 30px;
+  float: left;
+  width: 100%;
+}
+
+.navigation {
+  margin-bottom: 20px;
+}
+
+/* Content */
+.content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  float:right;
+  width: 100%;
+}
+
+/* pagination */
+.newer-posts {
+  font-weight: lighter;
+  margin-right: 20px;
+}
+
+.older-posts {
+  font-weight: lighter;
+  margin-left: 20px;
+}
+
+.page-number {
+  font-weight: lighter;
+}
+
+/* markers */
+.featured-marker {
+  text-align: right;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .sidebar {
+    margin-top: 15vh;
+    float: left;
+    width: 25%;
+    height: 70vh;
+    border-right: solid 0.5px #979797;
+    padding-top: 5%;
+    position: fixed;
+  }
+  .content {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    float: right;
+    width: 75%;
+    padding-right: 10%;
+  }
+  .nippy-nav li {
+    margin: 5px 0;
+    line-height: 0;
+    float: none;
+  }
+  .nippy-nav ul {
+    margin-bottom: 10px;
+  }
+}
