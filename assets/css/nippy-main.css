@@ -2,6 +2,30 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Serif Pro', serif;
 }
 
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 26px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #626262
@@ -46,6 +70,32 @@ a:hover {
   padding: 3px;
   line-height: 0;
   float: left;
+}
+
+.nippy-post {
+  width: 60%;
+  margin-top: 10%;
+}
+
+.nippy-post-meta {
+  font-size: 12px;
+}
+
+.nippy-post-header {
+  margin-bottom: 30px;
+}
+
+.nippy-post-footer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: "Source Sans Pro", sans-serif;;
+  font-style: italic;
+}
+
+.signature {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin-top: 15%;
 }
 
 .nav-current {
