@@ -1,5 +1,5 @@
 /**
- * Main JS file for Casper behaviours
+ * Main JS file for Nippy behaviours
  */
 
 /* globals jQuery, document */
@@ -13,12 +13,8 @@
         var $postContent = $(".post-content");
         $postContent.fitVids();
 
-        $(".scroll-down").arctic_scroll();
-
-        $(".menu-button, .nav-cover, .nav-close").on("click", function(e){
-            e.preventDefault();
-            $("body").toggleClass("nav-opened nav-closed");
-        });
+        // Add data-action for zoom.js
+        console.log($(".post-content").find('img').attr('data-action', 'zoom'));
 
     });
 

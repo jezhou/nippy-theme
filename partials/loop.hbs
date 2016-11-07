@@ -1,21 +1,23 @@
 {{!-- This is the post loop - each post will be output using this markup --}}
 {{#foreach posts}}
-  <div class="row {{post_class}}">
-    <a href="{{url}}">
-          <div class="col-sm-1 featured-marker">
-            {{#if featured}}
-              ⭐
-            {{/if}}
-          </div>
-          <div class="col-sm-3 col-xs-5">
-            <time class="post-date" datetime="{{date format='MMMM Do'}}">{{date format="MMMM Do"}}</time>
-          </div>
-          <div class="col-sm-8 col-xs-7 post-header">
-              <p class="post-title">{{title}}</p>
-          </div>
-    </a>
-  </div>
+  <a href="{{url}}">
+    <div class="row {{post_class}}">
+      <div class="col-sm-1 hidden-xs featured-marker">
+        {{#if featured}}
+          ⭐
+        {{/if}}
+      </div>
+      <div class="col-sm-3 col-xs-5">
+        <time class="post-date" datetime="{{date format='MMMM Do'}}">{{date format="MMMM Do"}}</time>
+      </div>
+      <div class="col-sm-8 col-xs-6 post-header">
+          <p class="post-title">{{title}}</p>
+      </div>
+    </div>
+  </a>
 {{/foreach}}
 
 {{!-- Previous/next page links - displayed on every page --}}
-{{!-- pagination --}}
+<div class="nippy-pagination">
+  {{pagination}}
+</div>

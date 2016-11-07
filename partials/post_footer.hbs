@@ -1,9 +1,14 @@
-<div class="nippy-post-footer">
+<div class="nippy-post-tags">
   {{tags prefix="Tags: "}}
+</div>
 
-  <div class="signature">
-    <p>
-      Everything here written by Jesse Zhou
-    </p>
+<div class="signature">
+  <div class="signature-logo">
+    <a href="{{@blog.url}}">
+      <img src="{{@blog.logo}}" />
+    </a>
   </div>
+  <p>
+    Everything here written by {{author}}
+  </p>
 </div>

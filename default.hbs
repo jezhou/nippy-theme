@@ -28,7 +28,16 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/nippy-main.css"}}" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700|Source+Serif+Pro:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700|Source+Serif+Pro:400,700" rel="stylesheet">
+
+    {{!-- Zoom shit --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/zoom.css"}}" />
+
+    {{!-- PRISM syntax highlighting --}}
+    {{!-- /* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+c+ruby+java+json+latex+markdown+objectivec+python+jsx+scala */--}}
+    {{!-- /* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+c+ruby+java+json+latex+markdown+objectivec+python+jsx+scala */--}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 </head>
@@ -48,6 +57,8 @@
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     {{!-- The main JavaScript file for Casper --}}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script type"text/javascript" src="{{asset "js/zoom.js"}}"></script>
+    <script type"text/javascript" src="{{asset "js/prism.js"}}"></script>
 
 </body>
 </html>

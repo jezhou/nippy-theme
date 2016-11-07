@@ -2,12 +2,50 @@
 
 {{#post}}
 
+{{#if featured}}
+  <div class="nippy-post-featured-header" style="background-image: url('{{image}}')">
+    <div class="nippy-post-featured-header-title">
+      <h1>
+        {{title}}
+      </h1>
+    </div>
+    <div class="nippy-post-featured-date">
+      {{> 'blog_title'}}
+    </div>
+  </div>
+
+  <main class="container nippy-post">
+    <article class="{{post_class}}">
+      <section class="post-content">
+        <section class="nippy-post-meta nippy-post-header">
+            <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D, YYYY"}}</time>
+        </section>
+        {{content}}
+      </section>
+
+      {{> "post_footer"}}
+    </article>
+  </main>
+
+{{else}}
+
+<div class="nippy-masthead">
+  {{> 'blog_title'}}
+</div>
+
+{{#if image}}
+  <div class="nippy-post-image-container">
+    <div class="nippy-post-image" style="background-image: url('{{image}}')">
+    </div>
+  </div>
+{{/if}}
+
 <main class="container nippy-post" role="main">
     <article class="{{post_class}}">
-
       <div class="row nippy-post-header">
-        <div class="col-sm-8">
+        <div class="col-sm-12">
             <h1>{{title}}</h1>
+            <h4>{{meta_description}}</h4>
             <section class="nippy-post-meta">
                 <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D, YYYY"}}</time>
             </section>
@@ -15,11 +53,13 @@
       </div>
 
       <section class="post-content">
-          {{content}}
+        {{content}}
       </section>
 
       {{> "post_footer"}}
     </article>
 </main>
+
+{{/if}}
 
 {{/post}}

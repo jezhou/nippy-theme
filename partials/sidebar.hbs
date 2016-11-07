@@ -1,13 +1,21 @@
 <div id="sidebar" class="sidebar">
   <div class="main-header-content inner">
-    <p class="nippy-title">{{@blog.title}}</p>
-    <p class="nippy-description">{{@blog.description}}</p>
+      <div class="nippy-cover" style="{{#if @blog.cover}}background-image: url('{{@blog.cover}}');color: white{{/if}}">
+        {{> 'blog_title'}}
+      </div>
   </div>
-  <div class="navigation">
+
+  <div class="sidebar-toggle hidden-sm hidden-md hidden-lg">
+    <a
+      data-toggle="collapse"
+      href="#nippy-navigation"
+      aria-expanded="false"
+      aria-controls="navigation">
+        Menu
+    </a>
+  </div>
+  <div class="navigation collapse" id="nippy-navigation">
     {{navigation}}
-  </div>
-  <div class="nippy-pagination hidden-xs">
-    {{pagination}}
   </div>
 
   <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
