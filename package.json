@@ -1,20 +1,18 @@
 {
     "name": "nippy",
-    "description": "Ultra minimal theme for Ghost. Made to minimize reader distraction.",
-    "demo": "https://demo.ghost.io",
-    "version": "0.0.1",
+    "description": "Ultra minimal theme for Ghost. Made to minimize reader distraction. Meant for personal bloggers :)",
+    "version": "1.0.0",
     "engines": {
         "ghost": ">=0.9.0 <1.0.0"
     },
     "license": "MIT",
     "screenshots": {
-        "desktop": "assets/screenshot-desktop.jpg",
-        "mobile": "assets/screenshot-mobile.jpg"
+        "desktop": "assets/desktop-screenshot.jpg",
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Jesse Zhou",
+        "email": "jesse.cy.zhou@gmail.com",
+        "url": "http://jezhou.com"
     },
     "gpm": {
         "type": "theme",
@@ -29,8 +27,8 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Casper.git"
+        "url": "https://github.com/jezhou/nippy-theme.git"
     },
-    "bugs": "https://github.com/TryGhost/Casper/issues",
-    "contributors": "https://github.com/TryGhost/Casper/graphs/contributors"
+    "bugs": "https://github.com/jezhou/nippy-theme/issues",
+    "contributors": "https://github.com/jezhou/nippy-theme/graphs/contributors"
 }
